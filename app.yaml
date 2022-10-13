@@ -13,9 +13,9 @@
 #  script: auto
 
 
-runtime: python
-env: flex
+runtime: python39
+#env: flex #env: flex sets the google app engine to flexible environment which is NOT FREE
 entrypoint: gunicorn -b :$PORT main:app
 
-runtime_config:
- python_version: 3
+#runtime_config:
+# python_version: 3
